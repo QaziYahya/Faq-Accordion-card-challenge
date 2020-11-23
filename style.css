@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body {
+  background: hsl(273, 75%, 66%);
+  font-family: 'kumbh sans';
+  line-height: 1.5;
+}
+
+.all {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 1000px;
+  height: 570px;
+  border-radius: 20px;
+  overflow: scroll;
+  display: flex;
+  box-shadow: 1px 1px 100px rgba(10, 10, 10, 0.3);
+}
+
+.main-img {
+  position: relative;
+  left: -180px;
+}
+
+.main-img .img-1 {
+  width: 500px;
+  height: 570px;
+}
+
+.main-img2 {
+  position: absolute;
+  bottom: 0;
+  left: 140px;
+  top: 80px;
+}
+
+.box {
+  position: absolute;
+  top: 150px;
+}
+
+.txt {
+  margin-top: 70px;
+  /* overflow: scroll; */
+}
+
+.question {
+  position: relative;
+  padding: 5px;
+}
+
+.toggler {
+  position: absolute;
+  top: 15px;
+  left: 305px;
+  opacity: 0;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  z-index: 2;
+}
+
+.arrow {
+  position: absolute;
+  top: 25px;
+  left: 315px;
+  transition: 0.5s;
+}
+
+.answer {
+  display: none;
+  padding-right: 30px;
+  font-size: 12px;
+  opacity: 0.8;
+  transition: all 0.5s ease;
+}
+
+.toggler:checked ~ .answer {
+  display: block;
+  opacity: 1;
+}
+
+.toggler:checked ~ .arrow {
+  transform: rotate(180deg);
+}
+
+.toggler:checked ~ .question-txt {
+  font-weight: bold;
+}
+
+.bottom-line {
+  height: 1px;
+  background: #ccc;
+  width: 450px;
+}
+
+@media (max-width: 1020px) {
+  .all {
+    width: 750px;
+    height: 530px;
+  }
+
+  .main-img {
+    position: relative;
+    left: -90px;
+  }
+
+  .main-img .img-1 {
+    width: 390px;
+    height: 440px;
+  }
+
+  .main-img2 {
+    left: -8px;
+  }
+
+  .main-img .img-2 {
+    width: 400px;
+  }
+
+  .main-img .img-3 {
+    width: 130px;
+  }
+  .bottom-line {
+    height: 1px;
+    background: #ccc;
+    width: 330px;
+  }
+}
+
+@media (max-width: 760px) {
+  .all {
+    flex-direction: column;
+    width: 350px;
+    height: 520px;
+    overflow: visible;
+    position: absolute;
+    top: 72%;
+    border-radius: 10px;
+  }
+  h2 {
+    text-align: center;
+  }
+  .main-img {
+    position: absolute;
+    left: 30px;
+    top: -250px;
+  }
+  .main-img .img-1 {
+    display: none;
+  }
+  .main-img .img-2 {
+    width: 300px;
+  }
+  .box {
+    position: absolute;
+    top: 100px;
+  }
+  .box .img-3 {
+    width: 110px;
+  }
+  .question {
+    padding-left: 15px;
+  }
+  .answer {
+    padding-right: 0;
+  }
+  .txt {
+    overflow: scroll;
+  }
+}
+
+@media (max-width: 360px) {
+  .all {
+    top: 80%;
+  }
+}
