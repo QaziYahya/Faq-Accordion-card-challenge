@@ -138,7 +138,7 @@ body {
     height: 520px;
     overflow: visible;
     position: absolute;
-    top: 72%;
+    top: 60%;
     border-radius: 10px;
   }
   h2 {
@@ -173,8 +173,8 @@ body {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-height: 687px) {
   .all {
-    top: 80%;
+    top: 70%;
   }
 }
