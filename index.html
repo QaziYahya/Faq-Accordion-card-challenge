@@ -4,18 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 1020px) "
+      href="./_mobile.css"
+    />
     <title>Document</title>
   </head>
   <body>
+    <!-- All of the content is inside the 'All'div -->
+
     <div class="all">
+      <!-- Main-img contains all of the images-->
       <div class="main-img">
+        <!-- img-1 is the shadow under the women illustration image -->
         <img class="img-1" src="./images/bg-pattern-desktop.svg" alt="" />
+        <!-- Main image 2 is the women illustration image -->
         <div class="main-img2">
           <img
             class="img-2"
             src="./images/illustration-woman-online-desktop.svg"
             alt=""
           />
+          <!-- Its that little box image-->
           <div class="box">
             <img
               class="img-3"
@@ -26,11 +37,16 @@
         </div>
       </div>
 
+      <!-- The 'txt' div has all the questions and answers inside of it -->
+
       <div class="txt">
         <h2>FAQ</h2>
+        <!-- Question 1 -->
         <div class="question-1 question">
+          <!-- Used a checkbox for making the answer appear on the screen -->
           <input type="checkbox" class="toggler-1 toggler" />
           <p class="question-txt">How many team members can i invite?</p>
+          <!-- This arrow is behind the checkbox -->
           <img class="arrow" src="./images/icon-arrow-down.svg" alt="" />
           <p class="answer answer-1">
             You can invite up to 2 additional users on the Free plan. There is
@@ -38,8 +54,10 @@
           </p>
         </div>
 
+        <!-- This is the line under each question. I used an empty div instead of border-bottom to stop it form expanding -->
         <div class="bottom-line"></div>
 
+        <!-- Question 2 -->
         <div class="question-2 question">
           <input type="checkbox" class="toggler-2 toggler" />
           <p class="question-txt">What is the maximum file upload size?</p>
@@ -50,8 +68,10 @@
           </p>
         </div>
 
+        <!-- This is the line under each question i used an empty div instead of border-bottom to stop it form expanding -->
         <div class="bottom-line"></div>
 
+        <!-- Question 3 -->
         <div class="question-3 question">
           <input type="checkbox" class="toggler-3 toggler" />
           <p class="question-txt">How do I reset my password?</p>
@@ -62,8 +82,10 @@
           </p>
         </div>
 
+        <!-- This is the line under each question i used an empty div instead of border-bottom to stop it form expanding -->
         <div class="bottom-line"></div>
 
+        <!-- Question 4 -->
         <div class="question-4 question">
           <input type="checkbox" class="toggler-4 toggler" />
           <p class="question-txt">Can I cancel my subscription?</p>
@@ -74,8 +96,10 @@
           </p>
         </div>
 
+        <!-- This is the line under each question i used an empty div instead of border-bottom to stop it form expanding -->
         <div class="bottom-line"></div>
 
+        <!-- Question 5 -->
         <div class="question-5 question">
           <input type="checkbox" class="toggler-5 toggler" />
           <p class="question-txt">Do you provide additional support?</p>
@@ -86,6 +110,7 @@
           </p>
         </div>
 
+        <!-- This is the line under each question i used an empty div instead of border-bottom to stop it form expanding -->
         <div class="bottom-line"></div>
       </div>
     </div>

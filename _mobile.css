@@ -1,0 +1,103 @@
+/* Styling for tablets */
+@media (max-width: 1020px) {
+  /* Contains all the content */
+  .all {
+    width: 750px;
+    height: 530px;
+  }
+
+  /* Contains all the images */
+  .main-img {
+    position: relative;
+    left: -90px;
+  }
+
+  /*  img-1 is the shadow under the Women illustration image */
+  .main-img .img-1 {
+    width: 390px;
+    height: 440px;
+  }
+
+  /*  main-img2 is container for the Women illustration image */
+  .main-img2 {
+    left: -8px;
+  }
+
+  /*  img-2 is the class for the Women illustration image */
+  .main-img .img-2 {
+    width: 400px;
+  }
+
+  /* img-3 is the class for that little box */
+  .main-img .img-3 {
+    width: 130px;
+  }
+
+  .bottom-line {
+    height: 1px;
+    background: #ccc;
+    width: 330px;
+  }
+}
+
+/* Styling for mobile devices */
+@media (max-width: 760px) {
+  /* Contains all the content */
+  .all {
+    flex-direction: column;
+    width: 350px;
+    height: 520px;
+    overflow: visible;
+    position: absolute;
+    top: 60%;
+    border-radius: 10px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .main-img {
+    position: absolute;
+    left: 30px;
+    top: -250px;
+  }
+
+  .main-img .img-1 {
+    display: none;
+  }
+
+  .main-img .img-2 {
+    width: 300px;
+  }
+
+  /* Container for the box image */
+  .box {
+    position: absolute;
+    top: 100px;
+  }
+
+  /* img-3 is the class for the box image */
+  .box .img-3 {
+    width: 110px;
+  }
+
+  .question {
+    padding-left: 15px;
+  }
+
+  .answer {
+    padding-right: 0;
+  }
+
+  .txt {
+    overflow: scroll;
+  }
+}
+
+/* Iphone 6 & 7 */
+@media (max-height: 687px) {
+  .all {
+    top: 70%;
+  }
+}

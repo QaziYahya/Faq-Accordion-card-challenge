@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
 body {
-  background: hsl(273, 75%, 66%);
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  min-height: 100vh;
   font-family: 'kumbh sans';
   line-height: 1.5;
 }
 
+/* Styling of the 'All' div which contains all of the content */
 .all {
   position: fixed;
   top: 50%;
@@ -20,16 +22,19 @@ body {
   box-shadow: 1px 1px 100px rgba(10, 10, 10, 0.3);
 }
 
+/* Main-img contains all of the images */
 .main-img {
   position: relative;
   left: -180px;
 }
 
+/*  img-1 is the shadow under the Women illustration image */
 .main-img .img-1 {
   width: 500px;
   height: 570px;
 }
 
+/*  main-img2 is the container for Women illustration image */
 .main-img2 {
   position: absolute;
   bottom: 0;
@@ -37,21 +42,24 @@ body {
   top: 80px;
 }
 
+/* container for that little box image */
 .box {
   position: absolute;
   top: 150px;
 }
 
+/* Contains all the questions and answers */
 .txt {
   margin-top: 70px;
-  /* overflow: scroll; */
 }
 
+/* Common styling for all the questions */
 .question {
   position: relative;
   padding: 5px;
 }
 
+/* Stylig of the checkbox */
 .toggler {
   position: absolute;
   top: 15px;
@@ -63,6 +71,7 @@ body {
   z-index: 2;
 }
 
+/* The little arrow right along the questions */
 .arrow {
   position: absolute;
   top: 25px;
@@ -70,6 +79,7 @@ body {
   transition: 0.5s;
 }
 
+/* Common styling for all the answers */
 .answer {
   display: none;
   padding-right: 30px;
@@ -78,103 +88,25 @@ body {
   transition: all 0.5s ease;
 }
 
+/* When checkbox is checked the answer will appear */
 .toggler:checked ~ .answer {
   display: block;
   opacity: 1;
 }
 
+/* When checkbox is checked the arrow will rotate */
 .toggler:checked ~ .arrow {
   transform: rotate(180deg);
 }
 
+/* When checkbox is checked the question will turn bold */
 .toggler:checked ~ .question-txt {
   font-weight: bold;
 }
 
+/* Line under each question */
 .bottom-line {
   height: 1px;
   background: #ccc;
   width: 450px;
-}
-
-@media (max-width: 1020px) {
-  .all {
-    width: 750px;
-    height: 530px;
-  }
-
-  .main-img {
-    position: relative;
-    left: -90px;
-  }
-
-  .main-img .img-1 {
-    width: 390px;
-    height: 440px;
-  }
-
-  .main-img2 {
-    left: -8px;
-  }
-
-  .main-img .img-2 {
-    width: 400px;
-  }
-
-  .main-img .img-3 {
-    width: 130px;
-  }
-  .bottom-line {
-    height: 1px;
-    background: #ccc;
-    width: 330px;
-  }
-}
-
-@media (max-width: 760px) {
-  .all {
-    flex-direction: column;
-    width: 350px;
-    height: 520px;
-    overflow: visible;
-    position: absolute;
-    top: 60%;
-    border-radius: 10px;
-  }
-  h2 {
-    text-align: center;
-  }
-  .main-img {
-    position: absolute;
-    left: 30px;
-    top: -250px;
-  }
-  .main-img .img-1 {
-    display: none;
-  }
-  .main-img .img-2 {
-    width: 300px;
-  }
-  .box {
-    position: absolute;
-    top: 100px;
-  }
-  .box .img-3 {
-    width: 110px;
-  }
-  .question {
-    padding-left: 15px;
-  }
-  .answer {
-    padding-right: 0;
-  }
-  .txt {
-    overflow: scroll;
-  }
-}
-
-@media (max-height: 687px) {
-  .all {
-    top: 70%;
-  }
 }
